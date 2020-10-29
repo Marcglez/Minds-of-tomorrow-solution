@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    background-image: url("../img/banner-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 8vw;
+}
+
+
+/* Clases de Columns*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 10%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+}
+
+#section-2 {
+    background-color: #28ECA5;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.three-coolumn {
+    float: left;
+    width: 33.3%;
+    padding: 10%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+
+/*clase de padding*/
+
+.padding-0 {
+    padding: 0%;
+}
+
+#seccion-5 {
+    text-align: center;
+    font-size: 3vw;
+    background-color: #46A6FC;
+}
+
+#seccion-5 p {
+    color: white;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .two-column,
+    .three-column {
+        width: 100%;
+    }
+    .header {
+        background-image: url('');
+    }
+    .four-column {
+        width: 50%;
+    }
+}
