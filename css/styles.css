@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Clear floats after the columns */
 
@@ -16,6 +20,42 @@ body {
     display: table;
     clear: both;
 }
+
+
+/*Estilos de la barra de navegacion*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 2vw;
+    padding: 0 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+
+/*Encabezado*/
 
 .header {
     background-image: url("../img/banner-2.jpg");
